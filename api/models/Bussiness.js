@@ -1,0 +1,40 @@
+/**
+* Bussiness.js
+*
+* @description :: TODO: You might write a short summary of how this model works and what it represents here.
+* @docs        :: http://sailsjs.org/#!documentation/models
+*/
+
+module.exports = {
+
+  attributes: {
+      cif : {
+          type: 'string',
+          unique : true,
+          required: true
+      },
+      name : {
+          type: 'string',
+          required: true
+      },
+      logo : {
+          type: 'binary',
+          required: true
+      },
+      address : {
+          type: 'string',
+          required: true
+      },
+      medicalRegistrationId : {
+          type: 'string',
+          required: true
+      },
+      phoneNumber : {
+          type: 'integer',
+          required : true
+      }
+
+
+  }
+};
+
